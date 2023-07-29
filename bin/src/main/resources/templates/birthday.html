@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anniversaire - {{firstName}} {{lastName}}</title>
+
+    <link rel="stylesheet" href="../static/pico.min.css">
+    <link rel="stylesheet" href="../static/main.css">
+
+    <style>
+        :root{
+    --primary : #f4a261;
+}
+    </style>
+</head>
+<body>
+    
+    <header class="container">
+        <nav>
+            <ul>
+                <li><strong>Birthday APP</strong></li>
+            </ul>
+
+            <ul>
+                <li><a href="/">Accueil</a></li>
+                <li><a href="show.html">Afficher</a></li>
+                <li><a href="/add">Ajouter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section>
+            <article>
+                <header><strong>{{firstName}} {{lastName}}</strong></header>
+                Pour la contacter tu peux : <br>
+                {{infos-contact}}
+            </article>
+        </section>
+    </main>
+
+</body>
+</html>
